@@ -3,6 +3,7 @@
 // }
 
 
-{      
-  "extends": ["next/babel", "next/core-web-vitals"]
+// there was a bable error ----
+{
+  "extends": ["next/babel","next/core-web-vitals"]
 }
