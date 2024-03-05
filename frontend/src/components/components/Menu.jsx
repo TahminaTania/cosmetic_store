@@ -50,7 +50,7 @@ const MobileMenu = ({ onClose, onLinkClick }) => {
         </div>
         <div className="flex flex-col items-center">
           {menu.map((link) => (
-            <Link href={link.path} key={link.title} className="text-white py-2 text-center hover:bg-gray-700 transition duration-300 w-full" onClick={() => {
+            <Link href={link.path} key={link.title} className="text-white  border-b-2 border-gray-500 py-2 text-center hover:bg-gray-700 transition duration-300 w-full" onClick={() => {
                 onClose();
                  
               }}>
@@ -73,7 +73,7 @@ const MobileMenu = ({ onClose, onLinkClick }) => {
   
     useEffect(() => {
       const handleResize = () => {
-        setMobileMenuOpen(window.innerWidth <= 600); // Adjust the threshold as needed
+        setMobileMenuOpen(window.innerWidth <= 600); // Adjust the size as needed
       };
   
       // Initial check
