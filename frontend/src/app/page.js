@@ -1,4 +1,4 @@
-import ProductCard from "@/components/product/ProductCard";
+import ProductCard from "@/components/components/ProductCard";
 import Image from "next/image";
 
 
