@@ -2,10 +2,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-const ProductCard = ({  }) => {
+const ProductCard = ({ slug }) => {
     return (
         <Link
-            href={`/product/`}
+            href={`product/${slug}`}
             className=" overflow-hidden bg-white duration-200 hover:scale-105 cursor-pointer"
         >
             {/* <Image

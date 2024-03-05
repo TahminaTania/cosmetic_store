@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link';
+import SearchBar from './searchbar';
 
 function Categoriespage() {
 
@@ -14,16 +15,15 @@ function Categoriespage() {
       <div  className="w-full h-[40px] md:h-[40px] bg-gray-300 flex items-center justify-between z-20 top-0 transition-transform duration-300">
       <div className="flex flex-row items-center font-extrabold w-full">
           {categories.map((category) => (
-            <Link href="/" key={category.id} className="text-white py-2 text-center hover:bg-gray-700 transition duration-300 w-full" >
+            <Link href="/" key={category.id} className="text-white py-2 text-center hover:bg-blue-700 transition duration-300 w-full" >
            
               <div> {category.name} </div> 
             
             </Link>
           ))}
         </div>
-
-
       </div>
+      <div className='p-5 w-full'>  <SearchBar/></div>
       
       
      </div>
